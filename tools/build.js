@@ -362,7 +362,7 @@ module.exports.dirs = dirs;
 
 if (require.main === module) {
     var argv = require("optimist").argv;
-    var browser = (typeof argv.browser !== "boolean" ? false : argv.browser) || !!argv.features;
+    var browser = (typeof argv.browser !== "boolean" ? false : argv.browser);
     module.exports({
         minify: browser && (typeof argv.minify !== "boolean" ? true : argv.minify),
         browser: browser,
