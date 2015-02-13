@@ -342,7 +342,7 @@ Promise.prototype._rejectionHandlerAt = function (index) {
 Promise.prototype._migrateCallbacks = function (follower, index) {
     var fulfill = follower._fulfillmentHandlerAt(index);
     var reject = follower._rejectionHandlerAt(index);
-    var progress = follower._progressHandlerAt(index);
+    var progress = undefined; //follower._progressHandlerAt(index);
     var promise = follower._promiseAt(index);
     var receiver = follower._receiverAt(index);
     if (promise instanceof Promise) {
