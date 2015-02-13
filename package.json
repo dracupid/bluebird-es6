@@ -1,7 +1,7 @@
 {
   "name": "bluebird-es6",
   "description": "A custom build of bluebird with only es6 promise API and promisify.",
-  "version": "2.9.9",
+  "version": "2.9.9-1",
   "keywords": [
     "promise",
     "performance",
